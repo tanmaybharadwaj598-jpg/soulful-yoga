@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Soulful Yoga Classes in Pratap Nagar, Sanganer, Jaipur. Contact us on WhatsApp to enquire about yoga classes." />
+  <title>Soulful Yoga Classes | Pratap Nagar, Jaipur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">ॐ</span><span id="brandName">Soulful Yoga Classes</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#about">About</a><a href="#classes">Classes</a><a href="#schedule">Schedule</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Join a class</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">Breathe • Move • Restore</span>
+        <h1>Make space for a <em>healthier you.</em></h1>
+        <p>Discover a calmer, stronger and more balanced way of living through mindful yoga practice.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact">Enquire about classes</a>
+          <a class="text-link" id="heroWhatsapp" href="#" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+        </div>
+        <div class="hero-note"><span class="dot"></span> Beginners are welcome</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div>
+        <div class="image-caption"><span>01 / YOUR WELLNESS JOURNEY</span><strong>Find your own rhythm.</strong></div>
+        <div class="sun-shape"></div>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div class="section-label">A LITTLE ABOUT US</div>
+      <div class="intro-grid">
+        <h2>Wellness is not a destination. It is a <em>daily practice.</em></h2>
+        <div>
+          <p class="large-copy" id="aboutText">Our classes bring together mindful movement, breathing and relaxation in a welcoming environment. Whether you are beginning your yoga journey or deepening an existing practice, there is space for you here.</p>
+          <p class="muted" id="instructorBio">Contact Soulful Yoga Classes to learn more about the instructor and available batches.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="classes-section section-wrap" id="classes">
+      <div class="section-heading">
+        <div><div class="section-label">EXPLORE YOUR PRACTICE</div><h2>Classes for every <em>body & mind.</em></h2></div>
+        <p>Choose a practice that feels right for you. Contact us to find the best batch for your goals.</p>
+      </div>
+      <div class="class-grid" id="classGrid">
+        <article class="class-card"><span class="class-number">01</span><h3>Hatha Yoga</h3><p>Build a steady foundation through postures, alignment and mindful breathing.</p><span class="class-tag">FOUNDATION</span></article>
+        <article class="class-card"><span class="class-number">02</span><h3>Pranayama</h3><p>Explore breath awareness and calming techniques for everyday wellbeing.</p><span class="class-tag">BREATHWORK</span></article>
+        <article class="class-card"><span class="class-number">03</span><h3>Meditation</h3><p>Make time for stillness, focus and a more mindful daily routine.</p><span class="class-tag">MINDFULNESS</span></article>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>Take care of your body. It is the only place you have to live.</p>
+      <span class="quote-credit">A MOMENT FOR YOURSELF</span>
+    </section>
+
+    <section class="schedule-section section-wrap" id="schedule">
+      <div class="section-heading">
+        <div><div class="section-label">PLAN YOUR PRACTICE</div><h2>Find a time that <em>works for you.</em></h2></div>
+        <p>Batch availability and timings may change. Send an enquiry to confirm your preferred slot.</p>
+      </div>
+      <div class="schedule-list" id="scheduleList">
+        <p class="muted">For current batch timings and availability, please contact us on WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-copy">
+        <div class="section-label">YOUR NEXT STEP</div>
+        <h2>Start with one <em>small step.</em></h2>
+        <p>Tell us a little about yourself. We will get in touch to help you find the right class.</p>
+        <div class="contact-detail"><span>WHATSAPP</span><strong id="contactPhone">9024130300</strong></div>
+        <div class="contact-detail"><span>LOCATION</span><strong id="contactLocation">Soulful Yoga Classes, Chetak Marg, near Gopinath Hospital, Sector 8, Pratap Nagar, Sanganer, Jaipur – 302033</strong></div>
+        <a class="button button-light" id="contactWhatsapp" href="#" target="_blank" rel="noopener">Message us on WhatsApp ↗</a>
+      </div>
+      <form class="inquiry-form" id="inquiryForm">
+        <h3>Enquire about a class</h3>
+        <label>Your name<input name="name" required maxlength="100" placeholder="Enter your full name"></label>
+        <label>Phone / WhatsApp number<input name="phone" required maxlength="20" placeholder="Your contact number"></label>
+        <div class="form-row">
+          <label>Preferred class<select name="class_name" id="classSelect"><option value="">Select a class</option></select></label>
+          <label>Preferred batch<select name="preferred_batch"><option value="">Any suitable batch</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+        </div>
+        <label>Message<textarea name="message" rows="3" maxlength="1000" placeholder="Tell us what you are looking for (optional)"></textarea></label>
+        <label class="consent"><input type="checkbox" required> <span>I agree to be contacted about yoga classes.</span></label>
+        <button class="button button-dark full-button" type="submit">Send enquiry <span>↗</span></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+        <small>Your details are used only to respond to this enquiry.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">ॐ</span><span id="footerBrand">Soulful Yoga Classes</span></a><span>Made for a more mindful everyday.</span><a href="./admin.html">Admin</a></footer>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

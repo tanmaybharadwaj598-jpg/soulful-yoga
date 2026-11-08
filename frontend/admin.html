@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Soulful Yoga Classes</title><link rel="stylesheet" href="./styles.css">
+</head>
+<body class="admin-body">
+  <header class="admin-top"><a class="brand" href="./index.html"><span class="brand-mark">ॐ</span>Soulful Yoga Classes</a><a href="./index.html">View website ↗</a></header>
+  <main class="admin-shell">
+    <section class="login-card" id="loginPanel">
+      <div class="section-label">PRIVATE ADMIN AREA</div><h1>Welcome back.</h1><p class="muted">Sign in to manage class enquiries and your yoga website.</p>
+      <form id="loginForm"><label>Username<input name="username" required autocomplete="username"></label><label>Password<input name="password" type="password" required autocomplete="current-password"></label><button class="button button-dark full-button">Sign in</button><p class="form-message" id="loginMessage"></p></form>
+    </section>
+    <section id="dashboardPanel" hidden>
+      <div class="admin-heading"><div><div class="section-label">STUDIO MANAGEMENT</div><h1>Admin dashboard</h1></div><button class="button button-outline" id="logoutButton">Log out</button></div>
+      <div class="stats-grid"><div class="stat-card"><span>Total enquiries</span><strong id="totalCount">0</strong></div><div class="stat-card"><span>New enquiries</span><strong id="newCount">0</strong></div><div class="stat-card"><span>Contacted</span><strong id="contactedCount">0</strong></div></div>
+      <div class="admin-panel">
+        <div class="panel-heading"><div><div class="section-label">STUDENT LEADS</div><h2>Enquiries</h2></div><button class="button button-outline" id="exportButton">Export CSV ↓</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Name</th><th>Phone</th><th>Class / Batch</th><th>Message</th><th>Status</th><th>Received</th><th>Contact</th></tr></thead><tbody id="inquiryRows"><tr><td colspan="7">Loading enquiries…</td></tr></tbody></table></div>
+      </div>
+      <div class="admin-panel">
+        <div class="panel-heading"><div><div class="section-label">WEBSITE CONTENT</div><h2>Studio settings</h2></div></div>
+        <form id="settingsForm" class="settings-grid">
+          <label>Studio / brand name<input name="studio_name" maxlength="100"></label>
+          <label>Instructor name<input name="instructor_name" maxlength="100"></label>
+          <label>WhatsApp number (country code + number)<input name="whatsapp_number" placeholder="919876543210"></label>
+          <label>Public phone display<input name="phone_display" maxlength="30"></label>
+          <label>Location<input name="location" maxlength="180"></label>
+          <label>Instructor introduction<textarea name="instructor_bio" rows="3" maxlength="1000"></textarea></label>
+          <label class="wide-field">About the classes<textarea name="about_text" rows="3" maxlength="1200"></textarea></label>
+          <button class="button button-dark">Save website settings</button><p class="form-message" id="settingsMessage"></p>
+        </form>
+      </div>
+      <div class="admin-panel">
+        <div class="panel-heading"><div><div class="section-label">CLASS PROGRAMS</div><h2>Manage classes</h2></div></div>
+        <form id="classForm" class="settings-grid">
+          <input type="hidden" name="id">
+          <label>Class name<input name="name" required maxlength="100" placeholder="e.g. Hatha Yoga"></label>
+          <label>Short category<input name="category" maxlength="60" placeholder="e.g. FOUNDATION"></label>
+          <label class="wide-field">Description<textarea name="description" rows="2" maxlength="500" required></textarea></label>
+          <label>Batch / timing<input name="timing" maxlength="100" placeholder="e.g. Morning, 7–8 AM"></label>
+          <button class="button button-dark">Save class</button><p class="form-message" id="classMessage"></p>
+        </form>
+        <div id="adminClassList" class="admin-class-list"></div>
+      </div>
+    </section>
+  </main>
+  <script src="./config.js"></script><script src="./admin.js"></script>
+</body>
+</html>
